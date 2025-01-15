@@ -1,8 +1,13 @@
 {
   "name": "my-nuxt-layer",
-  "type": "module",
   "version": "0.0.1",
   "main": "dist-electron/main.js",
+  "devDependencies": {
+    "@nuxt/ui": "2.21.0",
+    "nuxt": "^3.14.1592",
+    "typescript": "^5.7.2",
+    "vue": "latest"
+  },
   "scripts": {
     "dev": "nuxi dev .playground",
     "dev:prepare": "nuxt prepare .playground",
@@ -11,19 +16,5 @@
     "preview": "nuxt preview .playground",
     "lint": "eslint ."
   },
-  "devDependencies": {
-    "@nuxt/eslint": "latest",
-    "eslint": "^9.17.0",
-    "nuxt": "^3.14.1592",
-    "typescript": "^5.7.2",
-    "vue": "latest"
-  },
-  "dependencies": {
-    "@nuxtjs/tailwindcss": "^6.12.2",
-    "electron": "^33.2.1",
-    "electron-builder": "^25.1.8",
-    "nuxt-electron": "^0.7.0",
-    "vite-plugin-electron": "^0.29.0",
-    "vite-plugin-electron-renderer": "^0.14.6"
-  }
+  "type": "module"
 }
